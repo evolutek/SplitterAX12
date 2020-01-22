@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -120,9 +120,9 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="22-03-5035">
+<library name="22-03-5035" urn="urn:adsk.eagle:library:16582750">
 <packages>
-<package name="MOLEX_22-03-5035">
+<package name="MOLEX_22-03-5035" urn="urn:adsk.eagle:footprint:16582752/1" library_version="1" library_locally_modified="yes">
 <wire x1="7.45" y1="-1.8" x2="-2.45" y2="-1.8" width="0.127" layer="51"/>
 <wire x1="-2.45" y1="-1.8" x2="-2.45" y2="3.1" width="0.127" layer="51"/>
 <wire x1="-2.45" y1="3.1" x2="7.45" y2="3.1" width="0.127" layer="51"/>
@@ -131,21 +131,28 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="-2.45" y1="3.1" x2="7.45" y2="3.1" width="0.127" layer="21"/>
 <wire x1="-2.45" y1="-1.8" x2="-2.45" y2="3.1" width="0.127" layer="21"/>
 <wire x1="7.45" y1="-1.8" x2="-2.45" y2="-1.8" width="0.127" layer="21"/>
-<circle x="-2.9" y="0" radius="0.1" width="0.2" layer="51"/>
 <wire x1="7.7" y1="-2.05" x2="-2.7" y2="-2.05" width="0.05" layer="39"/>
 <wire x1="-2.7" y1="-2.05" x2="-2.7" y2="3.35" width="0.05" layer="39"/>
 <wire x1="-2.7" y1="3.35" x2="7.7" y2="3.35" width="0.05" layer="39"/>
 <wire x1="7.7" y1="3.35" x2="7.7" y2="-2.05" width="0.05" layer="39"/>
+<circle x="-2.9" y="0" radius="0.1" width="0.2" layer="51"/>
+<circle x="-2.9" y="0" radius="0.1" width="0.2" layer="21"/>
 <text x="-2.008659375" y="3.90433125" size="1.271690625" layer="25">&gt;NAME</text>
 <text x="-2.01175" y="-3.607690625" size="1.2723" layer="27">&gt;VALUE</text>
-<circle x="-2.9" y="0" radius="0.1" width="0.2" layer="21"/>
 <pad name="3" x="5" y="0" drill="0.85" diameter="1.28" rot="R180"/>
 <pad name="2" x="2.5" y="0" drill="0.85" diameter="1.28" rot="R180"/>
 <pad name="1" x="0" y="0" drill="0.85" diameter="1.28" shape="square" rot="R180"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="MOLEX_22-03-5035" urn="urn:adsk.eagle:package:16582754/3" type="model" library_version="1" library_locally_modified="yes">
+<packageinstances>
+<packageinstance name="MOLEX_22-03-5035"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="22-03-5035">
+<symbol name="22-03-5035" urn="urn:adsk.eagle:symbol:16582753/1" library_version="1" library_locally_modified="yes">
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
@@ -158,7 +165,7 @@ DIN A4, landscape with location and doc. field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="22-03-5035" prefix="J">
+<deviceset name="22-03-5035" urn="urn:adsk.eagle:component:16582755/1" locally_modified="yes" prefix="J" library_version="1" library_locally_modified="yes">
 <description>2.50mm Pitch SPOX™ Wire-to-Board Header, Vertical, Shrouded, 3 Circuits, Tin (Sn) Plating</description>
 <gates>
 <gate name="G$1" symbol="22-03-5035" x="0" y="0"/>
@@ -170,6 +177,9 @@ DIN A4, landscape with location and doc. field</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16582754/3"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="AVAILABILITY" value="Unavailable"/>
@@ -178,92 +188,6 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="MP" value="22-03-5035"/>
 <attribute name="PACKAGE" value="QFP-208 Molex"/>
 <attribute name="PRICE" value="None"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="con-wago-500" urn="urn:adsk.eagle:library:195">
-<description>&lt;b&gt;Wago Screw Clamps&lt;/b&gt;&lt;p&gt;
-Grid 5.00 mm&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="W237-102" urn="urn:adsk.eagle:footprint:10676/1" library_version="2">
-<description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
-<wire x1="-3.491" y1="-2.286" x2="-1.484" y2="-0.279" width="0.254" layer="51"/>
-<wire x1="1.488" y1="-2.261" x2="3.469" y2="-0.254" width="0.254" layer="51"/>
-<wire x1="-4.989" y1="-5.461" x2="4.993" y2="-5.461" width="0.1524" layer="21"/>
-<wire x1="4.993" y1="3.734" x2="4.993" y2="3.531" width="0.1524" layer="21"/>
-<wire x1="4.993" y1="3.734" x2="-4.989" y2="3.734" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="-5.461" x2="-4.989" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="-3.073" x2="-3.389" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="-3.389" y1="-3.073" x2="-1.611" y2="-3.073" width="0.1524" layer="51"/>
-<wire x1="-1.611" y1="-3.073" x2="1.615" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="3.393" y1="-3.073" x2="4.993" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="-3.073" x2="-4.989" y2="3.531" width="0.1524" layer="21"/>
-<wire x1="4.993" y1="-3.073" x2="4.993" y2="-5.461" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="3.531" x2="4.993" y2="3.531" width="0.1524" layer="21"/>
-<wire x1="-4.989" y1="3.531" x2="-4.989" y2="3.734" width="0.1524" layer="21"/>
-<wire x1="4.993" y1="3.531" x2="4.993" y2="-3.073" width="0.1524" layer="21"/>
-<wire x1="1.615" y1="-3.073" x2="3.393" y2="-3.073" width="0.1524" layer="51"/>
-<circle x="-2.5" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
-<circle x="-2.5" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
-<circle x="2.5038" y="-1.27" radius="1.4986" width="0.1524" layer="51"/>
-<circle x="2.5038" y="2.2098" radius="0.508" width="0.1524" layer="21"/>
-<pad name="1" x="-2.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
-<pad name="2" x="2.5" y="-1.27" drill="1.1938" shape="long" rot="R90"/>
-<text x="-5.04" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-3.8462" y="-5.0038" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-4.532" y="0.635" size="1.27" layer="21" ratio="10">1</text>
-<text x="0.421" y="0.635" size="1.27" layer="21" ratio="10">2</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="W237-102" urn="urn:adsk.eagle:package:10688/1" type="box" library_version="2">
-<description>WAGO SCREW CLAMP</description>
-<packageinstances>
-<packageinstance name="W237-102"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="KL" urn="urn:adsk.eagle:symbol:10675/1" library_version="2">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="0" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-<symbol name="KL+V" urn="urn:adsk.eagle:symbol:10673/1" library_version="2">
-<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
-<text x="0" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="W237-102" urn="urn:adsk.eagle:component:10702/2" prefix="X" uservalue="yes" library_version="2">
-<description>&lt;b&gt;WAGO SCREW CLAMP&lt;/b&gt;</description>
-<gates>
-<gate name="-1" symbol="KL" x="0" y="5.08" addlevel="always"/>
-<gate name="-2" symbol="KL+V" x="0" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="W237-102">
-<connects>
-<connect gate="-1" pin="KL" pad="1"/>
-<connect gate="-2" pin="KL" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:10688/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="237-102" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="70K9898" constant="no"/>
-<attribute name="POPULARITY" value="32" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -6838,6 +6762,149 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-ptr500" urn="urn:adsk.eagle:library:181">
+<description>&lt;b&gt;PTR Connectors&lt;/b&gt;&lt;p&gt;
+Aug. 2004 / PTR Meßtechnik:&lt;br&gt;
+Die Bezeichnung der Serie AK505 wurde geändert.&lt;br&gt;
+Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
+&lt;TABLE BORDER=0 CELLSPACING=1 CELLPADDING=2&gt;
+  &lt;TR&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;Alte Bezeichnung&lt;/B&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;FONT SIZE=4 FACE=ARIAL&gt;&lt;B&gt;Neue Bezeichnung&lt;/B&gt;&lt;/FONT&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;B&gt;
+      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;AK505/2,grau&lt;/FONT&gt;
+      &lt;/B&gt;
+    &lt;/TD&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;B&gt;
+      &lt;FONT SIZE=3 FACE=ARIAL color="#0000FF"&gt;AK500/2-5.0-H-GRAU&lt;/FONT&gt;
+      &lt;/B&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;B&gt;
+      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;AK505/2DS,grau&lt;/FONT&gt;
+      &lt;/B&gt;
+    &lt;/TD&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;B&gt;
+      &lt;FONT SIZE=3 FACE=ARIAL color="#0000FF"&gt;AK500/2DS-5.0-H-GRAU&lt;/FONT&gt;
+      &lt;/B&gt;
+    &lt;/TD&gt;
+  &lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;B&gt;
+      &lt;FONT SIZE=3 FACE=ARIAL color="#FF0000"&gt;AKZ505/2,grau&lt;/FONT&gt;
+      &lt;/B&gt;
+    &lt;/TD&gt;
+    &lt;TD ALIGN=LEFT&gt;
+      &lt;B&gt;
+      &lt;FONT SIZE=3 FACE=ARIAL color="#0000FF"&gt;AKZ500/2-5.08-H-GRAU&lt;/FONT&gt;
+      &lt;/B&gt;
+    &lt;/TD&gt;
+  &lt;/TABLE&gt;
+
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="AK500/2" urn="urn:adsk.eagle:footprint:9854/1" library_version="2">
+<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
+<wire x1="-5.08" y1="-3.556" x2="-5.08" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="3.937" x2="-5.08" y2="3.937" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="3.937" x2="5.08" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-3.556" x2="5.08" y2="-3.556" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="3.048" x2="-5.588" y2="3.175" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="3.048" x2="-5.08" y2="3.937" width="0.1524" layer="21"/>
+<wire x1="-5.588" y1="3.175" x2="-5.588" y2="2.032" width="0.1524" layer="21"/>
+<wire x1="-5.588" y1="2.032" x2="-5.08" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.159" x2="-5.08" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.159" x2="5.08" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.159" x2="5.08" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.159" x2="5.08" y2="-2.159" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.159" x2="-5.08" y2="2.159" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-2.159" x2="5.08" y2="-3.556" width="0.1524" layer="21"/>
+<wire x1="1.4986" y1="-1.397" x2="3.9116" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="1.1176" y1="-1.016" x2="3.5306" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="-3.9116" y1="-1.016" x2="-1.4986" y2="1.397" width="0.1524" layer="51"/>
+<wire x1="-3.5306" y1="-1.397" x2="-1.1176" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="1.4986" y1="-1.016" x2="3.5306" y2="1.016" width="0.6096" layer="51"/>
+<wire x1="-3.5306" y1="-1.016" x2="-1.4986" y2="1.016" width="0.6096" layer="51"/>
+<wire x1="1.1176" y1="-1.016" x2="1.4986" y2="-1.397" width="0.1524" layer="51"/>
+<wire x1="3.5306" y1="1.397" x2="3.9116" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-3.9116" y1="-1.016" x2="-3.5306" y2="-1.397" width="0.1524" layer="51"/>
+<wire x1="-1.4986" y1="1.397" x2="-1.1176" y2="1.016" width="0.1524" layer="51"/>
+<circle x="2.5146" y="3.048" radius="0.508" width="0.1524" layer="21"/>
+<circle x="-2.5146" y="3.048" radius="0.508" width="0.1524" layer="21"/>
+<circle x="2.5146" y="0" radius="1.778" width="0.1524" layer="51"/>
+<circle x="-2.5146" y="0" radius="1.778" width="0.1524" layer="51"/>
+<pad name="1" x="-2.5146" y="0" drill="1.3208" shape="long" rot="R90"/>
+<pad name="2" x="2.5146" y="0" drill="1.3208" shape="long" rot="R90"/>
+<text x="-5.08" y="4.445" size="1.778" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-5.715" size="1.778" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.445" y="2.54" size="0.9906" layer="21" ratio="12">1</text>
+<text x="0.635" y="2.54" size="0.9906" layer="21" ratio="12">2</text>
+<rectangle x1="-0.381" y1="-1.905" x2="0.381" y2="1.905" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="AK500/2" urn="urn:adsk.eagle:package:9880/1" type="box" library_version="2">
+<description>CONNECTOR</description>
+<packageinstances>
+<packageinstance name="AK500/2"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="KL" urn="urn:adsk.eagle:symbol:9841/1" library_version="2">
+<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.27" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="KLV" urn="urn:adsk.eagle:symbol:9842/1" library_version="2">
+<circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.27" y="0.889" size="1.778" layer="95" rot="R180">&gt;NAME</text>
+<text x="-3.81" y="-3.683" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="KL" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AK500/2" urn="urn:adsk.eagle:component:9906/2" prefix="X" uservalue="yes" library_version="2">
+<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
+<gates>
+<gate name="-1" symbol="KL" x="0" y="5.08" addlevel="always"/>
+<gate name="-2" symbol="KLV" x="0" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="AK500/2">
+<connects>
+<connect gate="-1" pin="KL" pad="1"/>
+<connect gate="-2" pin="KL" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:9880/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+<attribute name="POPULARITY" value="14" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6852,12 +6919,11 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </groups>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="J_OUT1" library="22-03-5035" deviceset="22-03-5035" device=""/>
-<part name="J_OUT2" library="22-03-5035" deviceset="22-03-5035" device=""/>
-<part name="J_OUT3" library="22-03-5035" deviceset="22-03-5035" device=""/>
-<part name="J_OUT4" library="22-03-5035" deviceset="22-03-5035" device=""/>
-<part name="J_IN" library="22-03-5035" deviceset="22-03-5035" device=""/>
-<part name="IN-POWER" library="con-wago-500" library_urn="urn:adsk.eagle:library:195" deviceset="W237-102" device="" package3d_urn="urn:adsk.eagle:package:10688/1"/>
+<part name="J_OUT1" library="22-03-5035" library_urn="urn:adsk.eagle:library:16582750" deviceset="22-03-5035" device="" package3d_urn="urn:adsk.eagle:package:16582754/3"/>
+<part name="J_OUT2" library="22-03-5035" library_urn="urn:adsk.eagle:library:16582750" deviceset="22-03-5035" device="" package3d_urn="urn:adsk.eagle:package:16582754/3"/>
+<part name="J_OUT3" library="22-03-5035" library_urn="urn:adsk.eagle:library:16582750" deviceset="22-03-5035" device="" package3d_urn="urn:adsk.eagle:package:16582754/3"/>
+<part name="J_OUT4" library="22-03-5035" library_urn="urn:adsk.eagle:library:16582750" deviceset="22-03-5035" device="" package3d_urn="urn:adsk.eagle:package:16582754/3"/>
+<part name="J_IN" library="22-03-5035" library_urn="urn:adsk.eagle:library:16582750" deviceset="22-03-5035" device="" package3d_urn="urn:adsk.eagle:package:16582754/3"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
@@ -6874,6 +6940,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="12V" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="500"/>
+<part name="POWER-IN" library="con-ptr500" library_urn="urn:adsk.eagle:library:181" deviceset="AK500/2" device="" package3d_urn="urn:adsk.eagle:package:9880/1" override_package3d_urn="urn:adsk.eagle:package:16583096/2" override_package_urn="urn:adsk.eagle:footprint:9854/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -10861,13 +10928,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="7.62" y="142.24" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="7.62" y="154.94" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="IN-POWER" gate="-1" x="2.54" y="132.08" smashed="yes">
-<attribute name="NAME" x="2.54" y="132.969" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="IN-POWER" gate="-2" x="2.54" y="127" smashed="yes">
-<attribute name="VALUE" x="0" y="123.317" size="1.778" layer="96"/>
-<attribute name="NAME" x="2.54" y="127.889" size="1.778" layer="95" rot="R180"/>
-</instance>
 <instance part="SUPPLY1" gate="GND" x="12.7" y="127" smashed="yes" rot="R90">
 <attribute name="VALUE" x="15.875" y="125.095" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -10918,6 +10978,13 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="NAME" x="3.81" y="118.3386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="3.81" y="113.538" size="1.778" layer="96"/>
 </instance>
+<instance part="POWER-IN" gate="-1" x="2.54" y="132.08" smashed="yes">
+<attribute name="NAME" x="1.27" y="132.969" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="POWER-IN" gate="-2" x="2.54" y="127" smashed="yes">
+<attribute name="NAME" x="1.27" y="127.889" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-1.27" y="123.317" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10951,9 +11018,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="IN-POWER" gate="-2" pin="KL"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <wire x1="7.62" y1="127" x2="10.16" y2="127" width="0.1524" layer="91"/>
+<pinref part="POWER-IN" gate="-2" pin="KL"/>
 </segment>
 <segment>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
@@ -10982,9 +11049,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="IN-POWER" gate="-1" pin="KL"/>
 <pinref part="SUPPLY4" gate="+12V" pin="+12V"/>
 <wire x1="7.62" y1="132.08" x2="10.16" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="POWER-IN" gate="-1" pin="KL"/>
 </segment>
 <segment>
 <pinref part="SUPPLY13" gate="+12V" pin="+12V"/>
@@ -11047,6 +11114,11 @@ packages will not be understood (or retained) with this version.
 <note version="9.5" severity="warning">
 Since Version 9.5, EAGLE supports persistent groups with
 schematics, and board files. Those persistent groups
+will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
 will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
