@@ -6939,7 +6939,7 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="12V" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="CHIP-LED0805" package3d_urn="urn:adsk.eagle:package:15818/2"/>
-<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="500"/>
+<part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="510"/>
 <part name="POWER-IN" library="con-ptr500" library_urn="urn:adsk.eagle:library:181" deviceset="AK500/2" device="" package3d_urn="urn:adsk.eagle:package:9880/1" override_package3d_urn="urn:adsk.eagle:package:16583096/2" override_package_urn="urn:adsk.eagle:footprint:9854/1"/>
 </parts>
 <sheets>
@@ -11090,8 +11090,8 @@ Es handelt sich hierbei um AK500 in horizontaler Ausführung.&lt;p&gt;
 </sheets>
 <errors>
 <approved hash="113,1,109.751,84.351,FRAME1,,,,,"/>
-<approved hash="113,1,-0.718141,132.08,IN-POWER,,,,,"/>
 <approved hash="113,1,16.51,117.162,12V,,,,,"/>
+<approved hash="113,1,-1.29569,132.08,POWER-IN,,,,,"/>
 </errors>
 </schematic>
 </drawing>
